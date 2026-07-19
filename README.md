@@ -4,6 +4,12 @@ Cloud Cost Explainer (Peekaboo) is an intelligent cloud management tool designed
 
 ---
 
+## Dashboard Preview
+
+![Cloud Cost Explainer Dashboard Preview](assets/dashboard_preview.png)
+
+---
+
 ## Features
 
 - **Automated Cost Summaries**: Generates plain-text summaries explaining cloud spending trends, anomalies, and breakdowns.
@@ -34,6 +40,7 @@ Cloud Cost Explainer (Peekaboo) is an intelligent cloud management tool designed
 
 ```
 .
+├── assets/           # Application screenshots and visual assets
 ├── backend/
 │   ├── api/          # HTTP handlers and router configuration
 │   ├── awsclient/    # AWS API client implementations (Mock & Real)
