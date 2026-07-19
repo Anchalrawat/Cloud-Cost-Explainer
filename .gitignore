@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment & Cache files
+.env
+.env.local
+.env.*.local
+.cache/
+.tmp/
+
+# Backend build outputs & database
+backend/peekaboo-backend
+backend/*.db
+backend/*.sqlite
+backend/.cache/
+backend/.tmp/
+*.db
+
+# Frontend build outputs & dependencies
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/tsconfig.tsbuildinfo
