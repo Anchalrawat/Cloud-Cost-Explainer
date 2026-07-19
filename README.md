@@ -4,9 +4,13 @@ Cloud Cost Explainer (Peekaboo) is an intelligent cloud management tool designed
 
 ---
 
-## Dashboard Preview
+## Screenshots & Application Preview
 
-![Cloud Cost Explainer Dashboard Preview](assets/dashboard_preview.png)
+### Main Dashboard Overview
+![Cloud Cost Explainer Dashboard](assets/Dashboard.png)
+
+### Amazon EC2 Cost & Breakdown Explainer
+![Amazon EC2 Cost Breakdown](<assets/Anarce Elsete Compute Cloud EC2.png>)
 
 ---
 
