@@ -1,0 +1,589 @@
+{
+  "users": {},
+  "aws_accounts": {
+    "acc-1773900000": {
+      "id": "acc-1773900000",
+      "user_id": "usr-demo-1",
+      "account_id": "123456789012",
+      "role_arn": "arn:aws:iam::123456789012:role/PeekabooReadOnlyRole",
+      "external_id": "ext-peekaboo-demo",
+      "status": "CONNECTED",
+      "created_at": "2026-07-19T18:29:00.462127+05:30"
+    },
+    "acc-demo-1": {
+      "id": "acc-demo-1",
+      "user_id": "usr-demo-1",
+      "account_id": "123456789012",
+      "role_arn": "arn:aws:iam::123456789012:role/PeekabooReadOnlyRole",
+      "external_id": "ext-peekaboo-demo",
+      "status": "CONNECTED",
+      "created_at": "2026-07-19T17:52:14.637334+05:30"
+    }
+  },
+  "cost_reports": {
+    "rep-1773900000": {
+      "id": "rep-1773900000",
+      "account_id": "acc-demo-1",
+      "date": "2026-07-18",
+      "total_spend": 43.72,
+      "total_delta": 18.4,
+      "currency": "USD",
+      "created_at": "2026-07-19T18:29:00.466508+05:30",
+      "breakdowns": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "spend_amount": 22.4,
+          "delta_amount": 9.8
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "spend_amount": 9.6,
+          "delta_amount": 4.1
+        },
+        {
+          "service_name": "AWS EC2 NAT Gateway",
+          "spend_amount": 3.22,
+          "delta_amount": 3.2
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "spend_amount": 8.5,
+          "delta_amount": 1.3
+        }
+      ],
+      "insights": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "resource_id": "i-abc123",
+          "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+          "recommendation": "Stop the unused EC2 instance.",
+          "impact_amount": 9.8,
+          "severity": "HIGH"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "resource_id": "db-production-replica",
+          "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+          "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+          "impact_amount": 1.3,
+          "severity": "LOW"
+        }
+      ]
+    },
+    "rep-1784466288493626000": {
+      "id": "rep-1784466288493626000",
+      "account_id": "acc-1773900000",
+      "date": "2026-07-18",
+      "total_spend": 43.72,
+      "total_delta": 18.4,
+      "currency": "USD",
+      "created_at": "2026-07-19T18:34:48.493627+05:30",
+      "breakdowns": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "spend_amount": 22.4,
+          "delta_amount": 9.8
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "spend_amount": 9.6,
+          "delta_amount": 4.1
+        },
+        {
+          "service_name": "AWS EC2 NAT Gateway",
+          "spend_amount": 3.22,
+          "delta_amount": 3.2
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "spend_amount": 8.5,
+          "delta_amount": 1.3
+        }
+      ],
+      "insights": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "resource_id": "i-abc123",
+          "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+          "recommendation": "Stop the unused EC2 instance.",
+          "impact_amount": 9.8,
+          "severity": "HIGH"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "resource_id": "db-production-replica",
+          "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+          "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+          "impact_amount": 1.3,
+          "severity": "LOW"
+        }
+      ]
+    },
+    "rep-1784466298595256000": {
+      "id": "rep-1784466298595256000",
+      "account_id": "acc-1773900000",
+      "date": "2026-07-18",
+      "total_spend": 43.72,
+      "total_delta": 18.4,
+      "currency": "USD",
+      "created_at": "2026-07-19T18:34:58.595258+05:30",
+      "breakdowns": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "spend_amount": 22.4,
+          "delta_amount": 9.8
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "spend_amount": 9.6,
+          "delta_amount": 4.1
+        },
+        {
+          "service_name": "AWS EC2 NAT Gateway",
+          "spend_amount": 3.22,
+          "delta_amount": 3.2
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "spend_amount": 8.5,
+          "delta_amount": 1.3
+        }
+      ],
+      "insights": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "resource_id": "i-abc123",
+          "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+          "recommendation": "Stop the unused EC2 instance.",
+          "impact_amount": 9.8,
+          "severity": "HIGH"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "resource_id": "db-production-replica",
+          "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+          "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+          "impact_amount": 1.3,
+          "severity": "LOW"
+        }
+      ]
+    },
+    "rep-1784466332019135000": {
+      "id": "rep-1784466332019135000",
+      "account_id": "acc-1773900000",
+      "date": "2026-07-18",
+      "total_spend": 43.72,
+      "total_delta": 18.4,
+      "currency": "USD",
+      "created_at": "2026-07-19T18:35:32.019137+05:30",
+      "breakdowns": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "spend_amount": 22.4,
+          "delta_amount": 9.8
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "spend_amount": 9.6,
+          "delta_amount": 4.1
+        },
+        {
+          "service_name": "AWS EC2 NAT Gateway",
+          "spend_amount": 3.22,
+          "delta_amount": 3.2
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "spend_amount": 8.5,
+          "delta_amount": 1.3
+        }
+      ],
+      "insights": [
+        {
+          "service_name": "Amazon Elastic Compute Cloud (EC2)",
+          "resource_id": "i-abc123",
+          "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+          "recommendation": "Stop the unused EC2 instance.",
+          "impact_amount": 9.8,
+          "severity": "HIGH"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Simple Storage Service (S3)",
+          "resource_id": "ebs-snapshots-vol-01",
+          "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+          "recommendation": "Delete snapshots older than 90 days.",
+          "impact_amount": 4.1,
+          "severity": "MEDIUM"
+        },
+        {
+          "service_name": "Amazon Relational Database Service (RDS)",
+          "resource_id": "db-production-replica",
+          "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+          "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+          "impact_amount": 1.3,
+          "severity": "LOW"
+        }
+      ]
+    }
+  },
+  "cost_breakdowns": {
+    "sb-ec2": {
+      "id": "sb-ec2",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "spend_amount": 22.4,
+      "delta_amount": 9.8
+    },
+    "sb-nat": {
+      "id": "sb-nat",
+      "report_id": "rep-1773900000",
+      "service_name": "AWS EC2 NAT Gateway",
+      "spend_amount": 3.22,
+      "delta_amount": 3.2
+    },
+    "sb-rds": {
+      "id": "sb-rds",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "spend_amount": 8.5,
+      "delta_amount": 1.3
+    },
+    "sb-rep-1773900000-AWS EC2 NAT Gateway": {
+      "id": "sb-rep-1773900000-AWS EC2 NAT Gateway",
+      "report_id": "rep-1773900000",
+      "service_name": "AWS EC2 NAT Gateway",
+      "spend_amount": 3.22,
+      "delta_amount": 3.2
+    },
+    "sb-rep-1773900000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "sb-rep-1773900000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "spend_amount": 22.4,
+      "delta_amount": 9.8
+    },
+    "sb-rep-1773900000-Amazon Relational Database Service (RDS)": {
+      "id": "sb-rep-1773900000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "spend_amount": 8.5,
+      "delta_amount": 1.3
+    },
+    "sb-rep-1773900000-Amazon Simple Storage Service (S3)": {
+      "id": "sb-rep-1773900000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "spend_amount": 9.6,
+      "delta_amount": 4.1
+    },
+    "sb-rep-1784466288493626000-AWS EC2 NAT Gateway": {
+      "id": "sb-rep-1784466288493626000-AWS EC2 NAT Gateway",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "AWS EC2 NAT Gateway",
+      "spend_amount": 3.22,
+      "delta_amount": 3.2
+    },
+    "sb-rep-1784466288493626000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "sb-rep-1784466288493626000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "spend_amount": 22.4,
+      "delta_amount": 9.8
+    },
+    "sb-rep-1784466288493626000-Amazon Relational Database Service (RDS)": {
+      "id": "sb-rep-1784466288493626000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "spend_amount": 8.5,
+      "delta_amount": 1.3
+    },
+    "sb-rep-1784466288493626000-Amazon Simple Storage Service (S3)": {
+      "id": "sb-rep-1784466288493626000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "spend_amount": 9.6,
+      "delta_amount": 4.1
+    },
+    "sb-rep-1784466298595256000-AWS EC2 NAT Gateway": {
+      "id": "sb-rep-1784466298595256000-AWS EC2 NAT Gateway",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "AWS EC2 NAT Gateway",
+      "spend_amount": 3.22,
+      "delta_amount": 3.2
+    },
+    "sb-rep-1784466298595256000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "sb-rep-1784466298595256000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "spend_amount": 22.4,
+      "delta_amount": 9.8
+    },
+    "sb-rep-1784466298595256000-Amazon Relational Database Service (RDS)": {
+      "id": "sb-rep-1784466298595256000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "spend_amount": 8.5,
+      "delta_amount": 1.3
+    },
+    "sb-rep-1784466298595256000-Amazon Simple Storage Service (S3)": {
+      "id": "sb-rep-1784466298595256000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "spend_amount": 9.6,
+      "delta_amount": 4.1
+    },
+    "sb-rep-1784466332019135000-AWS EC2 NAT Gateway": {
+      "id": "sb-rep-1784466332019135000-AWS EC2 NAT Gateway",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "AWS EC2 NAT Gateway",
+      "spend_amount": 3.22,
+      "delta_amount": 3.2
+    },
+    "sb-rep-1784466332019135000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "sb-rep-1784466332019135000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "spend_amount": 22.4,
+      "delta_amount": 9.8
+    },
+    "sb-rep-1784466332019135000-Amazon Relational Database Service (RDS)": {
+      "id": "sb-rep-1784466332019135000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "spend_amount": 8.5,
+      "delta_amount": 1.3
+    },
+    "sb-rep-1784466332019135000-Amazon Simple Storage Service (S3)": {
+      "id": "sb-rep-1784466332019135000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "spend_amount": 9.6,
+      "delta_amount": 4.1
+    },
+    "sb-s3": {
+      "id": "sb-s3",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "spend_amount": 9.6,
+      "delta_amount": 4.1
+    }
+  },
+  "insights": {
+    "ins-ec2-1": {
+      "id": "ins-ec2-1",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "resource_id": "i-abc123",
+      "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+      "recommendation": "Stop the unused EC2 instance.",
+      "impact_amount": 9.8,
+      "severity": "HIGH"
+    },
+    "ins-nat-1": {
+      "id": "ins-nat-1",
+      "report_id": "rep-1773900000",
+      "service_name": "AWS EC2 NAT Gateway",
+      "resource_id": "nat-0a1b2c3d4e5f6g7h8",
+      "reason": "NAT Gateway processed 95 GB more traffic (+$3.20)",
+      "recommendation": "Review VPC endpoint configurations to bypass NAT Gateway for S3/DynamoDB traffic.",
+      "impact_amount": 3.2,
+      "severity": "MEDIUM"
+    },
+    "ins-rds-1": {
+      "id": "ins-rds-1",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "resource_id": "db-production-replica",
+      "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+      "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+      "impact_amount": 1.3,
+      "severity": "LOW"
+    },
+    "ins-rep-1773900000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "ins-rep-1773900000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "resource_id": "i-abc123",
+      "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+      "recommendation": "Stop the unused EC2 instance.",
+      "impact_amount": 9.8,
+      "severity": "HIGH"
+    },
+    "ins-rep-1773900000-Amazon Relational Database Service (RDS)": {
+      "id": "ins-rep-1773900000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "resource_id": "db-production-replica",
+      "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+      "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+      "impact_amount": 1.3,
+      "severity": "LOW"
+    },
+    "ins-rep-1773900000-Amazon Simple Storage Service (S3)": {
+      "id": "ins-rep-1773900000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "resource_id": "ebs-snapshots-vol-01",
+      "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+      "recommendation": "Delete snapshots older than 90 days.",
+      "impact_amount": 4.1,
+      "severity": "MEDIUM"
+    },
+    "ins-rep-1784466288493626000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "ins-rep-1784466288493626000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "resource_id": "i-abc123",
+      "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+      "recommendation": "Stop the unused EC2 instance.",
+      "impact_amount": 9.8,
+      "severity": "HIGH"
+    },
+    "ins-rep-1784466288493626000-Amazon Relational Database Service (RDS)": {
+      "id": "ins-rep-1784466288493626000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "resource_id": "db-production-replica",
+      "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+      "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+      "impact_amount": 1.3,
+      "severity": "LOW"
+    },
+    "ins-rep-1784466288493626000-Amazon Simple Storage Service (S3)": {
+      "id": "ins-rep-1784466288493626000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1784466288493626000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "resource_id": "ebs-snapshots-vol-01",
+      "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+      "recommendation": "Delete snapshots older than 90 days.",
+      "impact_amount": 4.1,
+      "severity": "MEDIUM"
+    },
+    "ins-rep-1784466298595256000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "ins-rep-1784466298595256000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "resource_id": "i-abc123",
+      "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+      "recommendation": "Stop the unused EC2 instance.",
+      "impact_amount": 9.8,
+      "severity": "HIGH"
+    },
+    "ins-rep-1784466298595256000-Amazon Relational Database Service (RDS)": {
+      "id": "ins-rep-1784466298595256000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "resource_id": "db-production-replica",
+      "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+      "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+      "impact_amount": 1.3,
+      "severity": "LOW"
+    },
+    "ins-rep-1784466298595256000-Amazon Simple Storage Service (S3)": {
+      "id": "ins-rep-1784466298595256000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1784466298595256000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "resource_id": "ebs-snapshots-vol-01",
+      "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+      "recommendation": "Delete snapshots older than 90 days.",
+      "impact_amount": 4.1,
+      "severity": "MEDIUM"
+    },
+    "ins-rep-1784466332019135000-Amazon Elastic Compute Cloud (EC2)": {
+      "id": "ins-rep-1784466332019135000-Amazon Elastic Compute Cloud (EC2)",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "Amazon Elastic Compute Cloud (EC2)",
+      "resource_id": "i-abc123",
+      "reason": "EC2 instance `i-abc123` ran for 14 extra hours (+$9.80)",
+      "recommendation": "Stop the unused EC2 instance.",
+      "impact_amount": 9.8,
+      "severity": "HIGH"
+    },
+    "ins-rep-1784466332019135000-Amazon Relational Database Service (RDS)": {
+      "id": "ins-rep-1784466332019135000-Amazon Relational Database Service (RDS)",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "Amazon Relational Database Service (RDS)",
+      "resource_id": "db-production-replica",
+      "reason": "RDS instance `db-production-replica` auto-scaled storage by 50 GB (+$1.30)",
+      "recommendation": "Check DB retention policies and index usage to optimize storage expansion.",
+      "impact_amount": 1.3,
+      "severity": "LOW"
+    },
+    "ins-rep-1784466332019135000-Amazon Simple Storage Service (S3)": {
+      "id": "ins-rep-1784466332019135000-Amazon Simple Storage Service (S3)",
+      "report_id": "rep-1784466332019135000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "resource_id": "ebs-snapshots-vol-01",
+      "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+      "recommendation": "Delete snapshots older than 90 days.",
+      "impact_amount": 4.1,
+      "severity": "MEDIUM"
+    },
+    "ins-s3-1": {
+      "id": "ins-s3-1",
+      "report_id": "rep-1773900000",
+      "service_name": "Amazon Simple Storage Service (S3)",
+      "resource_id": "ebs-snapshots-vol-01",
+      "reason": "EBS snapshot storage increased by 120 GB (+$4.10)",
+      "recommendation": "Delete snapshots older than 90 days.",
+      "impact_amount": 4.1,
+      "severity": "MEDIUM"
+    }
+  }
+}
